@@ -14,17 +14,21 @@ If you are new to GitHub, we have compiled some helpful steps to get you started
 
 All code files should be stored in the `src/` folder and the primary execution file should be located in `src/main.py`. Please use the following outline as a guide for setting up your experiment repo README.
 
-# Experiment Name
-Provide a description for what your experiment is trying to do.
+# Soil Data Collection
+My experiment is intended to get a better understanding of the soil conditions at Northern Arizona University. This code accesses three SDI-12 sensors that are connected to a Stationary Node, namely the TEROS-12, MPS-6, and the 100K thermistor for ambient temperature.
 
 # Installation
-Detail instructions and build commands for installation.
+This program is dependant on pyserial, run the following command:
+`pip install pyserial`
 
 # Run
-Provide instructions on how to run your application.
+Since this program accesses the SDI-12 USB adapter, I usually call my program with `sudo`, run the following command to start my code:
+`sudo python3 main.py`
 
 # Results
 Provide a cloud storage link for the DISCOVER Operator to upload your experiment results. This should also be included in the experiment details on the DISCOVER portal. Google Drive works well for this, just be sure to share it with anyone who has access to the link of your shared folder.
+
+Cloud storage link: https://drive.google.com/drive/folders/1jorMT5u7E7JSW6Q5nnsQGnENOL5TnZ19?usp=sharing
 
 To see this template applied to an actual experiment, check out the branches associated with this repository:
  - [RoverDemo experiment](https://github.com/DiscoverCCRI/DISCOVER-Experiment-Template/tree/RoverDemo)
